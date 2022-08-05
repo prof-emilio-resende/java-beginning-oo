@@ -13,14 +13,15 @@ public class AppTest
     @Test
     public void shouldExistAirplane()
     {
-        var airplane = new Airplane(); 
+        var airplane = new Airplane();
         assertNotNull(airplane);
+        assertEquals(300, airplane.getSpeed());       
     }
 
     @Test
     public void shouldExistJet()
     {
-        var jet = new Jet(); 
+        var jet = new Jet(2, 300); 
         assertNotNull(jet);
     }
 
